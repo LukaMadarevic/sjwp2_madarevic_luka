@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zadaće</title>
+    <p>Luka Mađarević</p>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+
+            font-family: Arial, sans-serif;
+
+            background-image: url("priroda.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Naslov */
+        .naslov {
+            text-align: center;
+            color: white;
+            padding: 50px 20px 20px;
+
+            text-shadow: 2px 2px 5px black;
+        }
+
+        .naslov h1 {
+            margin: 0;
+            font-size: 45px;
+        }
+
+        .naslov p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        /* Gumbi za zadaće */
+        .zadace {
+            width: 80%;
+            max-width: 700px;
+
+            margin: 30px auto;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 20px;
+        }
+
+        .zadaca {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            min-height: 100px;
+
+            background-color: rgba(255, 255, 255, 0.92);
+
+            border-radius: 15px;
+
+            text-decoration: none;
+            color: #185c2b;
+
+            font-size: 23px;
+            font-weight: bold;
+
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+
+            transition: 0.3s;
+        }
+
+        /* Efekt kada miš prijeđe preko zadaće */
+        .zadaca:hover {
+            background-color: #dff5df;
+
+            transform: scale(1.05);
+
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+        }
+        p{
+            font-size:25px;
+            margin-left: 10px;
+        }
+        /* Podnožje */
+        footer {
+            margin-top: auto;
+
+            text-align: center;
+
+            color: white;
+
+            padding: 20px;
+
+            font-size: 16px;
+
+            text-shadow: 1px 1px 3px black;
+        }
+
+        /* Izgled na mobitelu */
+        @media (max-width: 600px) {
+
+            .naslov h1 {
+                font-size: 35px;
+            }
+
+            .naslov p {
+                font-size: 17px;
+            }
+
+            .zadace {
+                width: 90%;
+                grid-template-columns: 1fr;
+            }
+
+            .zadaca {
+                min-height: 80px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Naslov stranice -->
+    <div class="naslov">
+        <h1>🌲 Zadaće 🌲</h1>
+
+        <p>
+            Odaberite zadaću koju želite pregledati
+        </p>
+    </div>
+
+
+    <!-- Popis zadaća -->
+    <div class="zadace">
+
+        <a
+            class="zadaca"
+            href="zadaca1.html"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Zadaća 1
+        </a>
+
+
+        <a
+            class="zadaca"
+            href="zadaca2.html"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Zadaća 2
+        </a>
+
+
+        <a
+            class="zadaca"
+            href="zadaca3.html"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Zadaća 3
+        </a>
+
+
+        <a
+            class="zadaca"
+            href="zadaca4.html"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Zadaća 4
+        </a>
+
+
+        <a
+            class="zadaca"
+            href="zadaca5.html"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Zadaća 5
+        </a>
+
+
+        <a
+            class="zadaca"
+            href="zadaca6.html"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Zadaća 6
+        </a>
+
+    </div>
+
+
+    <!-- Podnožje -->
+    <footer>
+        Stranica za pregled zadaća
+    </footer>
+
+</body>
+</html>
