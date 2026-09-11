@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="600" height="600" style="border:1px solid black" ></canvas>
+    <script>
+        let c = document.getElementById("myCanvas");
+        let ctx=c.getContext("2d");
+        //cetverokut
+        ctx.beginPath();
+        ctx.rect(0,0, 100,200);
+        ctx.fillStyle="blue";
+        ctx.fill();
+        //krug
+        ctx.beginPath();
+        ctx.arc(200,300,80,0,2*Math.PI);
+        ctx.stroke();
+        ctx.strokeStyle="red"
+        //trokut
+        ctx.beginPath();
+        ctx.moveTo(300,250);
+        ctx.lineTo(400,350);
+        ctx.lineTo(200,350);
+        ctx.lineTo(300,250);
+        ctx.stroke();
+    </script>
+</body>
+</html>
