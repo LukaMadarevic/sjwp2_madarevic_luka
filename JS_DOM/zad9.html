@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head><meta charset="UTF-8"><title>Zadatak 9</title></head>
+<body>
+  <p id="tekst">Ovaj tekst možeš sakriti i ponovno prikazati.</p>
+  <button id="gumb">Sakrij/prikaži tekst</button>
+  <script>
+    const tekst = document.getElementById("tekst");
+    const gumb = document.getElementById("gumb");
+    gumb.onclick = function() {
+      if (tekst.style.display === "none") {
+        tekst.style.display = "block";
+      } else {
+        tekst.style.display = "none";
+      }
+    };
+  </script>
+</body>
+</html>

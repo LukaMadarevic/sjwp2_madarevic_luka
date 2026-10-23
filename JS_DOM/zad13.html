@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head><meta charset="UTF-8"><title>Zadatak 13</title></head>
+<body>
+  <button id="gumb">Povećaj broj</button>
+  <p>Broj klikova: <span id="broj">0</span></p>
+  <script>
+    const gumb = document.getElementById("gumb");
+    const broj = document.getElementById("broj");
+    let klikovi = 0;
+
+    gumb.onclick = function() {
+      klikovi = klikovi + 1;
+      broj.textContent = klikovi;
+      if (klikovi >= 10) {
+        broj.style.color = "green";
+      }
+    };
+  </script>
+</body>
+</html>

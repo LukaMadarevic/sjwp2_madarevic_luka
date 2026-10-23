@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head><meta charset="UTF-8"><title>Zadatak 14</title>
+<style>
+  .kartica { padding: 20px; margin: 10px 0; border-radius: 8px; }
+  .svijetla { background-color: white; color: black; border: 1px solid #999; }
+  .tamna { background-color: #222; color: white; border: 1px solid #555; }
+</style></head>
+<body>
+  <div id="kartica" class="kartica svijetla">
+    <h2>Moja kartica</h2>
+    <p>Ovdje se mijenja tema.</p>
+  </div>
+  <button id="gumb">Promijeni temu</button>
+  <script>
+    const kartica = document.getElementById("kartica");
+    const gumb = document.getElementById("gumb");
+    gumb.onclick = function() {
+      kartica.classList.toggle("svijetla");
+      kartica.classList.toggle("tamna");
+    };
+  </script>
+</body>
+</html>

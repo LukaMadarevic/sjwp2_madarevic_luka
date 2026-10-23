@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head><meta charset="UTF-8"><title>Zadatak 5</title></head>
+<body>
+  <button id="gumb">Prikaži poruku</button>
+  <p id="poruka"></p>
+  <script>
+    const gumb = document.getElementById("gumb");
+    const poruka = document.getElementById("poruka");
+    gumb.onclick = function() {
+      poruka.textContent = "Uspješno ste kliknuli gumb!";
+    };
+  </script>
+</body>
+</html>

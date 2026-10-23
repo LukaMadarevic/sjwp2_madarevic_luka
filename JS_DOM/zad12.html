@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head><meta charset="UTF-8"><title>Zadatak 12</title></head>
+<body>
+  <button id="onemoguci">Onemogući</button>
+  <button id="omoguci">Omogući</button>
+  <button id="ciljniGumb">Klikni me</button>
+  <script>
+    const onemoguci = document.getElementById("onemoguci");
+    const omoguci = document.getElementById("omoguci");
+    const ciljniGumb = document.getElementById("ciljniGumb");
+
+    onemoguci.onclick = function() {
+      ciljniGumb.setAttribute("disabled", "");
+    };
+    omoguci.onclick = function() {
+      ciljniGumb.removeAttribute("disabled");
+    };
+  </script>
+</body>
+</html>

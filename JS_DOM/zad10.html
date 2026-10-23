@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head><meta charset="UTF-8"><title>Zadatak 10</title></head>
+<body>
+  <img id="fotografija" src="https://placehold.co/300x180?text=Prva+slika" alt="Prva probna slika">
+  <br>
+  <button id="gumb">Promijeni sliku</button>
+  <script>
+    const fotografija = document.getElementById("fotografija");
+    const gumb = document.getElementById("gumb");
+    gumb.onclick = function() {
+      fotografija.setAttribute("src", "https://placehold.co/300x180/87CEEB/000000?text=Druga+slika");
+      fotografija.setAttribute("alt", "Druga probna slika s plavom pozadinom");
+    };
+  </script>
+</body>
+</html>

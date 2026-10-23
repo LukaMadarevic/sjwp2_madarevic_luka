@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head><meta charset="UTF-8"><title>Zadatak 15</title>
+<style>
+  #profil { max-width: 360px; padding: 20px; border: 2px solid #888; border-radius: 12px; font-family: Arial, sans-serif; }
+  #profil img { width: 180px; height: 120px; object-fit: cover; display: block; margin-bottom: 10px; }
+  #profil.istaknuto { background-color: #fff3cd; border-color: #d39e00; box-shadow: 0 0 8px #ccc; }
+  button { margin: 4px 4px 4px 0; }
+</style></head>
+<body>
+  <div id="profil">
+    <h2 id="ime">Ana Horvat</h2>
+    <p id="opis">Učenica koja uči izrađivati web-stranice.</p>
+    <img id="fotografija" src="https://placehold.co/180x120?text=Profil" alt="Profilna probna fotografija">
+    <a id="poveznica" href="https://www.wikipedia.org/">Moja omiljena stranica</a>
+  </div>
+  <p>
+    <button id="promijeniIme">Promijeni ime</button>
+    <button id="promijeniOpis">Promijeni opis</button>
+    <button id="promijeniFotografiju">Promijeni fotografiju</button>
+  </p>
+  <script>
+    const profil = document.getElementById("profil");
+    const ime = document.getElementById("ime");
+    const opis = document.getElementById("opis");
+    const fotografija = document.getElementById("fotografija");
+    const poveznica = document.getElementById("poveznica");
+
+    document.getElementById("promijeniIme").onclick = function() {
+      ime.textContent = "Marko Marić";
+      profil.classList.add("istaknuto");
+    };
+    document.getElementById("promijeniOpis").onclick = function() {
+      opis.textContent = "Volim programiranje i izradu interaktivnih stranica.";
+      poveznica.textContent = "Posjeti OpenStreetMap";
+      poveznica.setAttribute("href", "https://www.openstreetmap.org/");
+      profil.classList.add("istaknuto");
+    };
+    document.getElementById("promijeniFotografiju").onclick = function() {
+      fotografija.setAttribute("src", "https://placehold.co/180x120/87CEEB/000000?text=Nova+slika");
+      fotografija.setAttribute("alt", "Nova profilna fotografija s plavom pozadinom");
+      profil.classList.add("istaknuto");
+    };
+  </script>
+</body>
+</html>

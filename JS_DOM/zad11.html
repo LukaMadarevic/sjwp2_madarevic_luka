@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head><meta charset="UTF-8"><title>Zadatak 11</title></head>
+<body>
+  <a id="poveznica" href="https://www.wikipedia.org/">Otvori Wikipediju</a>
+  <br>
+  <button id="gumb">Promijeni poveznicu</button>
+  <script>
+    const poveznica = document.getElementById("poveznica");
+    const gumb = document.getElementById("gumb");
+    gumb.onclick = function() {
+      poveznica.setAttribute("href", "https://www.openstreetmap.org/");
+      poveznica.textContent = "Otvori OpenStreetMap";
+    };
+  </script>
+</body>
+</html>
