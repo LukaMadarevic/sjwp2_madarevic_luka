@@ -1,19 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="hr">
-<head><meta charset="UTF-8"><title>Zadatak 8</title>
-<style>
-  .kartica { padding: 20px; border: 1px solid gray; }
-  .istaknuto { background-color: gold; border: 3px solid orange; font-weight: bold; }
-</style></head>
-<body>
-  <div id="kartica" class="kartica">Ovo je kartica.</div>
-  <button id="gumb">Uključi/isključi istaknuti izgled</button>
-  <script>
-    const kartica = document.getElementById("kartica");
-    const gumb = document.getElementById("gumb");
-    gumb.onclick = function() {
-      kartica.classList.toggle("istaknuto");
-    };
-  </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Zadatak 8</title>
+    <style>
+      .kartica {
+        padding: 20px;
+        border: 1px solid gray;
+      }
+      .istaknuto {
+        background-color: gold;
+        border: 3px solid orange;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="kartica" class="kartica">Ovo je kartica.</div>
+    <button id="gumb">Uključi/isključi istaknuti izgled</button>
+    <script>
+      const kartica = document.getElementById("kartica");
+      const gumb = document.getElementById("gumb");
+      gumb.onclick = function () {
+        kartica.classList.toggle("istaknuto");
+      };
+    </script>
+  </body>
 </html>
