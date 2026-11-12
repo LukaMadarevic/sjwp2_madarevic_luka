@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Brojač klikova</title>
+  </head>
+  <body>
+    <h1>Brojač klikova</h1>
+
+    <h2 id="broj">0</h2>
+
+    <button id="plus">+</button>
+    <button id="minus">-</button>
+    <button id="reset">Reset</button>
+
+    <p id="poruka"></p>
+
+    <script>
+      let broj = 0;
+
+      const prikaz = document.getElementById("broj");
+      const poruka = document.getElementById("poruka");
+
+      function azurirajPrikaz() {
+        prikaz.textContent = broj;
+
+        if (broj < 0) {
+          poruka.textContent = "Broj je negativan!";
+        } else {
+          poruka.textContent = "";
+        }
+      }
+
+      document.getElementById("plus").addEventListener("click", function () {
+        broj++;
+        azurirajPrikaz();
+      });
+
+      document.getElementById("minus").addEventListener("click", function () {
+        broj--;
+        azurirajPrikaz();
+      });
+
+      document.getElementById("reset").addEventListener("click", function () {
+        broj = 0;
+        azurirajPrikaz();
+      });
+    </script>
+  </body>
+</html>
